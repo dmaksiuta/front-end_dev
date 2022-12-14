@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dmytro Maksiuta</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<nav class="nav" id="nav">
+				<div id="nav-toggle" onclick="navToggle()" class="nav-toggle"><span class="nav-toggle__line"></span></div>
+				<ul id="nav-link" class="nav-link">
+					<li class="nav-link__item" onclick="navToggle()"><a class="link--active" onclick="scrollToSection('home')" data-href="#home">Home</a></li>
+					<li class="nav-link__item" onclick="navToggle()"><a class="link" onclick="scrollToSection('portfolio')" data-href="#portfolio">Portfolio</a></li>
+					<li class="nav-link__item" onclick="navToggle()"><a class="link" onclick="scrollToSection('about')" data-href="#about">About</a></li>
+					<li class="nav-link__item" onclick="navToggle()"><a class="link" onclick="scrollToSection('resume')" data-href="resume">Resume</a></li>
+				</ul>
+			</nav>
+			<main class="main">
+				<section class="home" id="home">
+					<div class="home__bg"></div>
+					<div class="home__title">Hello, I'm</div>
+					<h1 class="home__name">Dmytro Maksiuta</h1>
+					<p class="home__desc">and I'm a front-end developer</p>
+				</section>
+				<section class="portfolio" id="portfolio">
+					<div class="title">Featured <span>Portfolio</span></div>
+					<div class="portfolio__list row" id="portfolio__list">
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/webartwork.jpg" alt="WebArtWork"></div>
+							<h2 class="portfolio-item__title">Web Art Work</h2>
+							<div class="portfolio-item__desc">UI UX Design & Web development</div>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/bejaboo.jpg" alt="Bejaboo"></div>
+							<h2 class="portfolio-item__title">Bejaboo</h2>
+							<h3 class="portfolio-item__desc">Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/comatch.jpg" alt="CoMatchMe"></div>
+							<h2 class="portfolio-item__title">CoMatchMe</h2>
+							<h3 class="portfolio-item__desc">UI UX Design & Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/wawteam.jpg" alt="WAWTeam"></div>
+							<h2 class="portfolio-item__title">WAW Team</h2>
+							<h3 class="portfolio-item__desc">UI UX Design</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/teacompany.jpg" alt="TeaDelivery"></div>
+							<h2 class="portfolio-item__title">Tea Delivery</h2>
+							<h3 class="portfolio-item__desc">UI UX Design</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/massageworld.jpg" alt="MassageWorld"></div>
+							<h2 class="portfolio-item__title">Massage World</h2>
+							<h3 class="portfolio-item__desc">Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/exmobile.jpg" alt="ExMobile"></div>
+							<h2 class="portfolio-item__title">ExMobile</h2>
+							<h3 class="portfolio-item__desc">Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/finddrivers.jpg" alt="FindDrivers"></div>
+							<h2 class="portfolio-item__title">Find Drivers</h2>
+							<h3 class="portfolio-item__desc">Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/memo.jpg" alt="MemoWallet"></div>
+							<h2 class="portfolio-item__title">Memo Wallet</h2>
+							<h3 class="portfolio-item__desc">Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/coffee.jpg" alt="CoffeeWaiter"></div>
+							<h2 class="portfolio-item__title">Coffee Waiter</h2>
+							<h3 class="portfolio-item__desc">UI UX Design & Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/pagefly.jpg" alt="PageFly"></div>
+							<h2 class="portfolio-item__title">Page Fly</h2>
+							<h3 class="portfolio-item__desc">UI UX Design & Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/telegram.jpg" alt="TelegramApp"></div>
+							<h2 class="portfolio-item__title">Telegram App</h2>
+							<h3 class="portfolio-item__desc">Figma to HTML CSS</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/classcommunity.jpg" alt="ClassCommunity"></div>
+							<h2 class="portfolio-item__title">Class Community</h2>
+							<h3 class="portfolio-item__desc">Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/dotaworld.jpg" alt="DotaWorld"></div>
+							<h2 class="portfolio-item__title">Dota World</h2>
+							<h3 class="portfolio-item__desc">Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/mustbeinlife.jpg" alt="MustBeInLife"></div>
+							<h2 class="portfolio-item__title">MustBeInLife</h2>
+							<h3 class="portfolio-item__desc">Web development</h3>
+						</a>
+						<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="portfolio-item col-3">
+							<div class="portfolio-item__img"><img width="400" height="400" src="assets/img/portfolio/metabolic.jpg" alt="Metabolic"></div>
+							<h2 class="portfolio-item__title">Metabolic</h2>
+							<h3 class="portfolio-item__desc">PSD to HTML CSS</h3>
+						</a>
+					</div>
+					<a class="portfolio__list-toggle" id="portfolio__list-toggle" data-href="#portfolio" onclick="scrollToSection('portfolio');portfolioListToggle()">Show more</a>
+				</section>
+				<section class="about" id="about">
+					<div class="row">
+						<div class="about__img col-2">
+							<a href="https://www.youtube.com/watch?v=5XhxuWKyqlo" class="video-player">
+								<span class="text">Upwork</span>
+								<div class="video-player__button"></div>
+							</a>
+						</div>
+						<div class="about__content col-2">
+							<div class="title">About <span>Me</span></div>
+							<p class="about__text">I work in WebArtWork Agency, it's a community of web freelancers from Ukraine, with over 7 years of building experience, maintaining, and scaling applications. If you want to create a successful project, my team and I are ready to help you to make a good one. We do our work properly and responsibly and make sure our client has remained satisfied.
+							</p>
+							<p class="about__text">
+								I use popular frameworks HTML5, CSS3, SASS, SCSS, Angular (support all version) Mongo DB, and Node JS
+								I also provide QA tests on different platforms such as iOS, Android, Web.
+								I want to build long-time working relationships with employers and contribute my skills to new interesting projects, also I often pick
+							</p>
+							<p class="about__text">
+								Convert PSD, Figma, Adobe XD, Adobe Photoshop to responsive, valid code (HTML, CSS, CSS)
+							</p>
+							<div class="about__action">
+								<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="btn-link btn-link--green">Hire Me</a>
+								<a href="assets/dmytro_maksiuta.pdf" class="btn-link btn-link--dark" download>Download CV</a>
+							</div>
+						</div>
+					</div>
+					<div class="about__services">
+						<div class="title">My <span>Services</span></div>
+						<div class="about__services-list row">
+							<div class="col-3">
+								<div class="service">
+									<div class="service__icon"><span class="icon-brush"></span></div>
+									<h4 class="service__title">Web Design</h4>
+									<p class="service__desc">Figma Adobe Photoshop XD Illustrator Sketch Zeplin</p>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="service">
+									<div class="service__icon"><span class="icon-code"></span></div>
+									<h4 class="service__title">Web Development</h4>
+									<p class="service__desc">HTML CSS SCSS MongoDB Express Angular NodeJS</p>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="service">
+									<div class="service__icon"><span class="icon-bug_report"></span></div>
+									<h4 class="service__title">Quality Assurance</h4>
+									<p class="service__desc">Manual testing Writing test cases Test regression</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<section class="resume" id="resume">
+					<div class="title">My <span>Resume</span></div>
+					<div class="resume__wrapp row">
+						<div class="resume__exp col-2">
+							<div class="resume__title">Experience</div>
+							<div class="resume-item">
+								<div class="resume-item__date"><span class="icon-event"></span> April 2017 - Present</div>
+								<h5 class="resume-item__title">Web Art Work - Front end developer</h5>
+								<div class="resume-item__desc">Community of web freelancers from Ukraine, with over 7 years of building experience, maintaining, and scaling applications.</div>
+								<div class="resume-item__loc">Kamyanets-Podilsky, Ukraine</div>
+							</div>
+							<div class="resume-item">
+								<div class="resume-item__date"><span class="icon-event"></span> April 2017 - Present</div>
+								<h5 class="resume-item__title">Web Art Work - Quality Assurance</h5>
+								<div class="resume-item__desc">Community of web freelancers from Ukraine, with over 7 years of building experience, maintaining, and scaling applications.</div>
+								<div class="resume-item__loc">Kamyanets-Podilsky, Ukraine</div>
+							</div>
+							<div class="resume-item">
+								<div class="resume-item__date"><span class="icon-event"></span> April 2017 - Present</div>
+								<h5 class="resume-item__title">Web Art Work - UI / UX Designer</h5>
+								<div class="resume-item__desc">Community of web freelancers from Ukraine, with over 7 years of building experience, maintaining, and scaling applications.</div>
+								<div class="resume-item__loc">Kamyanets-Podilsky, Ukraine</div>
+							</div>
+						</div>
+						<div class="resume__edu col-2">
+							<div class="resume__title">Education</div>
+							<div class="resume-item">
+								<div class="resume-item__date"><span class="icon-event"></span> September 2017 - Present</div>
+								<div class="resume-item__title">Computer Science</div>
+								<div class="resume-item__desc">Pavlo Tychyna Uman State Pedagogical University. <br> Web & mobile app development</div>
+								<div class="resume-item__loc">Uman, Ukraine</div>
+							</div>
+						</div>
+					</div>
+					<div class="resume__wrapp">
+						<div class="resume__title">Other</div>
+						<div class="row">
+							<div class="resume__exp col-2">
+								<div class="resume-item _h100p">
+									<div class="resume-item__title">Skills</div>
+									<div class="resume-item__desc _tags">
+										<h6 class="tag">HTML</h6>
+										<h6 class="tag">CSS</h6>
+										<h6 class="tag">SCSS</h6>
+										<h6 class="tag">SASS</h6>
+										<h6 class="tag">Angular</h6>
+										<h6 class="tag">MongoDB</h6>
+										<h6 class="tag">NodeJS</h6>
+										<h6 class="tag">Express</h6>
+										<h6 class="tag">Javascript</h6>
+										<h6 class="tag">Web Development</h6>
+										<h6 class="tag">Responsive Web Design</h6>
+										<h6 class="tag">Bootstrap</h6>
+										<h6 class="tag">Typescript</h6>
+									</div>
+								</div>
+							</div>
+							<div class="resume__exp col-2">
+								<div class="resume-item _h100p">
+									<div class="resume-item__title">Languages</div>
+									<div class="resume-item__desc _lang"><span class="icon-verified"></span>English: Conversational</div>
+									<div class="resume-item__desc _lang"><span class="icon-verified"></span>Ukrainian: Native or Bilingual</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="contact" id="contact">
+					<h6 class="title">Get <span>In Touch</span></h6>
+					<div class="contact__info">
+						<div class="info">
+							<div class="info__title">UpWork</div>
+							<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" class="info__data">Dmytro Maksiuta</a>
+						</div>
+						<div class="info">
+							<div class="info__title">GitHub</div>
+							<a href="https://github.com/dmaksiuta" class="info__data">Dmytro Maksiuta</a>
+						</div>
+						<div class="info">
+							<div class="info__title">Email</div>
+							<a href="mailto:lord1kdev@gmail.com" class="info__data">lord1kdev@gmail.com</a>
+						</div>
+						<div class="info">
+							<div class="info__title">Linked In</div>
+							<a href="https://www.linkedin.com/in/dmytro-maksiuta-51b863162/" class="info__data">Dmytro Maksiuta</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__copy">Copyright © <span id="year"></span> All rights reserved by <h6>Dmytro Maksiuta</h6>
+				</div>
+			</footer>
+			<div onclick="darkmodeToggle()" class="dark-mode"><span id="dark-mode__icon" class="icon-light_mode"></span></div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+
+</html>

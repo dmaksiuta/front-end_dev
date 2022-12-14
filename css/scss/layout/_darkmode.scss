@@ -1,0 +1,48 @@
+.dark-mode {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: $color-1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-4;
+    box-shadow: 0 0 6px 0px $color-5;
+}
+
+.html--darkmode {
+    .home {
+        color: #fff;
+    }
+
+    .nav-link__item {
+        color: #fff;
+    }
+
+    .nav--fixed .nav-link__item {
+        color: $color-4;
+    }
+
+    .btn-link {
+        color: #fff;
+
+        &:hover {
+            color: #333;
+        }
+    }
+
+    @media (max-width: 767.9px) {
+        .nav-link__item {
+            color: #000;
+        }
+    }
+
+    ::selection {
+        background: $color-3;
+    }
+
+}

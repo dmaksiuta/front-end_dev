@@ -1,0 +1,41 @@
+// ===== COLORS SETTINGS =====
+:root {
+    --color-1: #333;
+    --color-2: #a1aeba;
+    --color-3: #bac964;
+    --color-4: #fff;
+    --color-5: rgba(255, 255, 255, 0.4);
+    --color-6: #222;
+    --color-7: #111;
+    --color-8: rgba(255, 255, 255, 0.7);
+    --color-9: rgba(255, 255, 255, 0.75);
+
+}
+
+// ===== COLORS FOR SCSS =====
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-5: var(--color-5);
+$color-6: var(--color-6);
+$color-7: var(--color-7);
+$color-8: var(--color-8);
+$color-9: var(--color-9);
+
+
+
+
+
+.html--darkmode {
+    transition: .3s all ease-in-out;
+    --color-1: #ffffff;
+    --color-2: #545454;
+    --color-3: #4def64;
+    --color-4: #4c4c4c;
+    --color-5: #afafaf;
+    --color-6: #f1f1f1;
+    --color-7: #fff;
+	--color-8: #111;
+	--color-9: #777;
+}
